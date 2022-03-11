@@ -285,23 +285,23 @@ synchronized关键字是为了解决多个线程访问资源的同步性问题�
 - 继承Thread类并重写run方法创建线程，实现简单，但是不能继承其他类
 - 实现Runable接口并重写run方法，解决了单继承局限性的问题，实现解耦
 - 实现Callable接口并重写了call方法，创建线程。可以获取线程执行结果的返回值
-- 使用线程池创建（使用 java.util.concurrent.Executor 接口）
+- 使用线程池创建（使用 `java.util.concurrent.Executor` 接口）
 
 ### 16.线程池的重要参数
 
-1. corePoolSize：线程池核心线程数量
-2. maximumPoolSize：线程池最大数量
-3. keepAliveTime：空闲线程存活时间，如果一个线程处于空闲状态，并且当前线程数量大于corePoolSize，那么在指定时间后，这个空闲线程就会被销毁
-4. unit：keepAliveTime的单位
-5. workQueue：线程池所使用的缓冲队列，新任务被提交后会先进入工作队列，等待调度
-6. threadFactory：线程工厂，用于创建线程，一般用默认的即可
-7. handler：拒绝策略，当任务太多来不及处理，如何拒绝任务
+1. `corePoolSize`：线程池核心线程数量
+2. `maximumPoolSize`：线程池最大数量
+3. `keepAliveTime`：空闲线程存活时间，如果一个线程处于空闲状态，并且当前线程数量大于`corePoolSize`，那么在指定时间后，这个空闲线程就会被销毁
+4. `unit：keepAliveTime`的单位
+5. `workQueue`：线程池所使用的缓冲队列，新任务被提交后会先进入工作队列，等待调度
+6. `threadFactory`：线程工厂，用于创建线程，一般用默认的即可
+7. `handler`：拒绝策略，当任务太多来不及处理，如何拒绝任务
 
 ### 17.线程池的使用方式
 
-Excutors创建线程池的4种方式：
+`Excutors`创建线程池的4种方式：
 
-1. newSingleThreadExecutor：只会创建一个线程执行任务
+1. `newSingleThreadExecutor`：只会创建一个线程执行任务
 
 ***
 
