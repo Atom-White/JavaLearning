@@ -297,6 +297,12 @@ synchronized关键字是为了解决多个线程访问资源的同步性问题�
 6. threadFactory：线程工厂，用于创建线程，一般用默认的即可
 7. handler：拒绝策略，当任务太多来不及处理，如何拒绝任务
 
+### 17.线程池的使用方式
+
+Excutors创建线程池的4种方式：
+
+1. newSingleThreadExecutor：只会创建一个线程执行任务
+
 ***
 
 ## 三、SpringBoot
